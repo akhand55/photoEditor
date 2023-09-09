@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/f33c562873.js" crossorigin="anonymous"></script>
+  <title>Image Editor</title>
+</head>
+
+<body>
+
+  <div class="container disable">
+
+   
+
+    <div class="wrapper">
+
+      <div class="editor-panel"> <br>
+        <div class="filter">
+          <label class="title1">Filter</label>
+          <div class="options">
+            <button id="brightness" class="active"><i class="fa-regular fa-sun"></i> Brightness</button>
+            <button id="saturation"><i class="fa-solid fa-circle-half-stroke"></i> Saturation</button>
+            <button id="inversion"><i class="fa-solid fa-backward"></i> Negative</button>
+            <button id="grayscale"><i class="fa-solid fa-feather"></i> B&W</button>
+            <button class="choose-img" id="choose-img"><i class="fa-regular fa-image"></i> Choose Image</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="preview-img">
+        <button class="reset-filter" title="Reset Button"><i class="fa-regular fa-circle-xmark"></i></button>
+
+        <img src="image/Placeholder_view_vector.svg.png" alt="preview-img" title="Select Image" class="images" />
+        <div class="controls">
+          <div class="row">
+            <input type="file" class="file-input" accept="image/*" hidden />
+            <button class="save-img"><i class="fa-solid fa-download"></i> Save Image</button>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="filter-info">
+            <p class="name">Brighteness</p>
+            <p class="value">100%</p>
+          </div>
+          <input type="range" value="100" min="0" max="200" />
+
+        </div>
+      </div>
+
+<br><br>
+<!-- <h2>Image Editor</h2> -->
+
+      <label class="title">Rotate & Flip</label>
+      <div class="rotate">
+        <div class="option">
+          <button id="left" title="Rotate"><i class="fa-solid fa-rotate-left"></i>  <span class="span"> Rotate</span></button>
+          <button id="right" title="Rotate"><i class="fa-solid fa-rotate-right"></i>  <span class="span"> Rotate</span></button>
+          <button id="vertical" title="Vertical"><i class="fa-solid fa-ruler-vertical"></i>  <span class="span"> Vertical</span></button>
+          <button id="horizontal" title="Mirror Image"><i class="fa-solid fa-ruler-horizontal"></i>  <span class="span"> Mirror </span></button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
